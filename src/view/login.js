@@ -25,17 +25,16 @@ class Login extends React.Component {
                                     <div class="col-lg-12">
                                         <div class="bs-component">
                                             <fieldset>
-                                                <FormGroup label="E-mail: *" htmlFor="exampleInputEmail1">
-                                                    <input type="email" value={this.state.email}
+                                                <FormGroup label="E-mail: *" htmlFor="inputEmailLogin">
+                                                    <input type="email" value={this.state.email} style={{ margin: '5px 0'}}
                                                     onChange={e => this.setState({email: e.target.value})}
-                                                    className="form-control" id="exampleInputEmail1" 
-                                                    aria-describedby="emailHelp" placeholder="Digite o Email" />
+                                                    className="form-control" id="inputEmailLogin" 
+                                                    aria-describedby="emailHelp" placeholder="Digite o e-mail" />
                                                 </FormGroup>
-                                                <FormGroup label="Senha: *" htmlFor="exampleInputPassword1">
-                                                    <input type="password" value={this.state.senha}
+                                                <FormGroup label="Senha: *" htmlFor="inputSenhaLogin">
+                                                    <input type="password" value={this.state.senha} style={{ margin: '5px 0'}}
                                                     onChange={e => this.setState({senha: e.target.value})}
-                                                    className="form-control" id="exampleInputPassword1" 
-                                                    placeholder="Password" />
+                                                    className="form-control" id="inputSenhaLogin" />
                                                 </FormGroup>
                                                 <button onClick={this.entrar} type="button" 
                                                     className="btn btn-success" style={{ margin: '10px'}}>
